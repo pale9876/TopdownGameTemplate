@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="UnitInformation" format=3 uid="uid://c8qn50dilibqs"]
+
+[ext_resource type="PackedScene" uid="uid://bp4pdps0ifeeh" path="res://features/heal_object/PlayerHealObject.tscn" id="1_0v4pu"]
+[ext_resource type="Script" uid="uid://c3ykemf4n3om1" path="res://features/unit/information/Information.gd" id="1_7rvsm"]
+
+[resource]
+script = ExtResource("1_7rvsm")
+name = &"sample_minion"
+speed = 75.0

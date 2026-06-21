@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://boieogg2d32r5"]
+
+[ext_resource type="Script" uid="uid://dl2h3dk154j54" path="res://features/ingame/map/zone.gd" id="1_4gy11"]
+
+[node name="Zone" type="StaticBody2D" unique_id=1001146065 node_paths=PackedStringArray("zone_entry")]
+y_sort_enabled = true
+script = ExtResource("1_4gy11")
+zone_entry = NodePath("ZoneEntry")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1869022927]
+build_mode = 1
+polygon = PackedVector2Array(0, 0, 512, 0, 512, 832, 0, 832)
+
+[node name="ZoneEntry" type="Area2D" parent="." unique_id=896966119]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ZoneEntry" unique_id=320428280]
+polygon = PackedVector2Array(5.2409744, 8.516583, 506.75903, 8.516583, 506.75903, 823.4834, 5.2409744, 823.4834)

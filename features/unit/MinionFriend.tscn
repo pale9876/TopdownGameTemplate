@@ -1,0 +1,414 @@
+[gd_scene format=3 uid="uid://c5ewbb0454kjk"]
+
+[ext_resource type="Script" uid="uid://bl84ixx4kubfe" path="res://features/unit/Enemy.gd" id="1_wsnfn"]
+[ext_resource type="Resource" uid="uid://c8qn50dilibqs" path="res://features/unit/information/minion.tres" id="2_hgaqc"]
+[ext_resource type="Texture2D" uid="uid://cwc6mwi8w6uj3" path="res://assets/sprite/minion/minion_friend.png" id="3_2y6nn"]
+[ext_resource type="Script" uid="uid://cdpmo1dhtm3s5" path="res://features/unit/Hitbox.gd" id="4_hodfh"]
+[ext_resource type="Script" uid="uid://d2ox33o3w3u0r" path="res://features/unit/HitShape.gd" id="5_g0sh7"]
+[ext_resource type="Script" uid="uid://xw07ofvvtrxk" path="res://features/HitboxInformation.gd" id="6_10f3x"]
+[ext_resource type="Resource" uid="uid://diujqo41v585b" path="res://data/unit/MinionAttackHitbox.tres" id="7_y6w4n"]
+[ext_resource type="Script" uid="uid://bupj3hlvtt67s" path="res://features/unit/Hurtbox.gd" id="8_7vw3h"]
+[ext_resource type="Script" uid="uid://dyahyd1lku8rp" path="res://features/unit/state/UnitStateMachine.gd" id="9_edk3i"]
+[ext_resource type="Script" uid="uid://blv54hbjolw3f" path="res://features/unit/state/Idle.gd" id="10_q1dn0"]
+[ext_resource type="Script" uid="uid://ddijsbxqimocf" path="res://features/unit/state/Chase.gd" id="11_p4rtg"]
+[ext_resource type="Script" uid="uid://cpx0m44vhyoyu" path="res://features/unit/MinionAttack.gd" id="12_tts3f"]
+[ext_resource type="Script" uid="uid://bj2svwo8lojer" path="res://features/unit/state/Knockbacked.gd" id="13_ix5t3"]
+[ext_resource type="Script" uid="uid://dosvkk4obp5lh" path="res://features/unit/state/Dead.gd" id="14_nu1g3"]
+[ext_resource type="Script" uid="uid://4ajax74ievsy" path="res://features/unit/HpProgress.gd" id="15_agyse"]
+
+[sub_resource type="Gradient" id="Gradient_2ul3e"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.85779816)
+colors = PackedColorArray(0, 0, 0, 0.6666667, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wqsic"]
+gradient = SubResource("Gradient_2ul3e")
+width = 16
+height = 8
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.85, 0.85)
+
+[sub_resource type="Animation" id="Animation_21bc6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_14hdg"]
+resource_name = "hurt"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333333, 0.06666667, 0.10000001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_21bc6"]
+_data = {
+&"RESET": SubResource("Animation_21bc6"),
+&"hurt": SubResource("Animation_14hdg")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wqsic"]
+radius = 6.0
+height = 14.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7jywp"]
+radius = 3.0
+
+[sub_resource type="Resource" id="Resource_wqsic"]
+script = ExtResource("6_10f3x")
+metadata/_custom_type_script = "uid://xw07ofvvtrxk"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5r2dq"]
+radius = 15.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2ul3e"]
+radius = 7.0
+height = 26.0
+
+[sub_resource type="Animation" id="Animation_a3q01"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hitbox/MinionHitboxShape:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Hitbox/MinionHitboxShape:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -15)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_gphg5"]
+resource_name = "attack"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hitbox/MinionHitboxShape:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hitbox/MinionHitboxShape:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.57),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_i3260"]
+resource_name = "death"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.77),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -15), Vector2(0, -2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.03, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.5707964]
+}
+
+[sub_resource type="Animation" id="Animation_hs7ws"]
+resource_name = "idle"
+length = 2.5000000000000004
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(1, 2),
+"points": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-18, -1, -35, 1, 35.002, -18, -1, -35, 1, 35),
+"times": PackedFloat32Array(0, 2.5)
+}
+
+[sub_resource type="Animation" id="Animation_hemru"]
+resource_name = "knockbacked"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_7oxhv"]
+resource_name = "move"
+length = 3.5000000000000004
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
+"times": PackedFloat32Array(0, 3.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-15, 0, 0, 1, -10, -15, -1, 10, 0, 0),
+"times": PackedFloat32Array(0, 3.5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_japly"]
+_data = {
+&"RESET": SubResource("Animation_a3q01"),
+&"attack": SubResource("Animation_gphg5"),
+&"death": SubResource("Animation_i3260"),
+&"idle": SubResource("Animation_hs7ws"),
+&"knockbacked": SubResource("Animation_hemru"),
+&"move": SubResource("Animation_7oxhv")
+}
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_j58vh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tdbo8"]
+bg_color = Color(0.053382106, 0.000848826, 0.0011687846, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v26gd"]
+bg_color = Color(0.82, 0.03280002, 0.03280002, 1)
+border_color = Color(1, 1, 1, 1)
+
+[node name="Unit" type="CharacterBody2D" unique_id=2064536848]
+collision_layer = 0
+motion_mode = 1
+script = ExtResource("1_wsnfn")
+information = ExtResource("2_hgaqc")
+
+[node name="DropShadow" type="Sprite2D" parent="." unique_id=924943166]
+texture = SubResource("GradientTexture2D_wqsic")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=65572535]
+position = Vector2(0, -15)
+texture = ExtResource("3_2y6nn")
+offset = Vector2(0, -10)
+
+[node name="EffectPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=635779591]
+libraries/ = SubResource("AnimationLibrary_21bc6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=54862801]
+position = Vector2(0, -7)
+shape = SubResource("CapsuleShape2D_wqsic")
+debug_color = Color(0, 0.6, 0.69803923, 0.2)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=403300593]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource("4_hodfh")
+
+[node name="Collider" type="CollisionShape2D" parent="Hitbox" unique_id=1023419182]
+shape = SubResource("CircleShape2D_7jywp")
+script = ExtResource("5_g0sh7")
+hitbox_info = SubResource("Resource_wqsic")
+metadata/_custom_type_script = "uid://d2ox33o3w3u0r"
+
+[node name="MinionHitboxShape" type="CollisionShape2D" parent="Hitbox" unique_id=1190996442]
+visible = false
+shape = SubResource("CircleShape2D_5r2dq")
+disabled = true
+script = ExtResource("5_g0sh7")
+hitbox_info = ExtResource("7_y6w4n")
+metadata/_custom_type_script = "uid://d2ox33o3w3u0r"
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1792069261]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("8_7vw3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=296316886]
+position = Vector2(0, -13)
+shape = SubResource("CapsuleShape2D_2ul3e")
+debug_color = Color(0.8509804, 0.8627451, 0.21960784, 0.21176471)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1250304981]
+libraries/ = SubResource("AnimationLibrary_japly")
+
+[node name="UnitStateMachine" type="LimboHSM" parent="." unique_id=1607507779 node_paths=PackedStringArray("idle_state", "chase_state", "attack_state", "knockback_state", "dead_state")]
+blackboard_plan = SubResource("BlackboardPlan_j58vh")
+script = ExtResource("9_edk3i")
+idle_state = NodePath("Idle")
+chase_state = NodePath("Chase")
+attack_state = NodePath("MinionAttack")
+knockback_state = NodePath("Knockbacked")
+dead_state = NodePath("Dead")
+
+[node name="Idle" type="LimboState" parent="UnitStateMachine" unique_id=668787050 node_paths=PackedStringArray("chase_state")]
+script = ExtResource("10_q1dn0")
+chase_state = NodePath("../Chase")
+
+[node name="Chase" type="LimboState" parent="UnitStateMachine" unique_id=389341764 node_paths=PackedStringArray("idle_state", "attack_state")]
+script = ExtResource("11_p4rtg")
+idle_state = NodePath("../Idle")
+attack_state = NodePath("../MinionAttack")
+
+[node name="MinionAttack" type="LimboState" parent="UnitStateMachine" unique_id=432130436 node_paths=PackedStringArray("chase_state", "anim", "hitbox_shape")]
+script = ExtResource("12_tts3f")
+chase_state = NodePath("../Chase")
+anim = NodePath("../../AnimationPlayer")
+hitbox_shape = NodePath("../../Hitbox/MinionHitboxShape")
+metadata/_custom_type_script = "uid://likvxdlwm1kj"
+
+[node name="Knockbacked" type="LimboState" parent="UnitStateMachine" unique_id=342494764]
+script = ExtResource("13_ix5t3")
+
+[node name="Dead" type="LimboState" parent="UnitStateMachine" unique_id=1880747699]
+script = ExtResource("14_nu1g3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=599457071]
+avoidance_enabled = true
+avoidance_layers = 0
+debug_enabled = true
+debug_use_custom = true
+
+[node name="PathRezen" type="Timer" parent="NavigationAgent2D" unique_id=1668495119]
+
+[node name="Hp" type="ProgressBar" parent="." unique_id=1054011846]
+visible = false
+offset_left = -21.0
+offset_top = -62.0
+offset_right = 21.0
+offset_bottom = -55.0
+theme_override_styles/background = SubResource("StyleBoxFlat_tdbo8")
+theme_override_styles/fill = SubResource("StyleBoxFlat_v26gd")
+max_value = 1.0
+step = 0.001
+value = 1.0
+show_percentage = false
+script = ExtResource("15_agyse")
+
+[node name="VisibleTimer" type="Timer" parent="Hp" unique_id=1590302681]
+wait_time = 4.0

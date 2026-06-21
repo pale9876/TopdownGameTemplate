@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://u3bdpe1nyh2p"]
+
+[ext_resource type="Script" uid="uid://bkhxdm8jtemo2" path="res://features/Projectile.gd" id="1_w4uqb"]
+[ext_resource type="Script" uid="uid://b507w5hwf1c65" path="res://features/ProjectileInformation.gd" id="2_g1508"]
+
+[sub_resource type="Resource" id="Resource_w4uqb"]
+script = ExtResource("2_g1508")
+metadata/_custom_type_script = "uid://b507w5hwf1c65"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wqsic"]
+
+[node name="Projectile" type="CharacterBody2D" unique_id=821586975]
+script = ExtResource("1_w4uqb")
+info = SubResource("Resource_w4uqb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1037614405]
+shape = SubResource("CircleShape2D_wqsic")

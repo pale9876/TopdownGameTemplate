@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://nussutw68akt"]
+
+[ext_resource type="TileSet" uid="uid://dbau1c27xg8xn" path="res://data/map/sewer_tilemap/tileset_sewer_tile.tres" id="1_lsqjq"]
+[ext_resource type="TileSet" uid="uid://c4cu8kdfhulut" path="res://data/map/sewer_tilemap/tileset_water.tres" id="2_d0d4x"]
+[ext_resource type="TileSet" uid="uid://brrwafmcm3133" path="res://data/map/sewer_tilemap/tileset_sewer_prop.tres" id="3_d4lrt"]
+
+[node name="TilemapSewer" type="Node2D" unique_id=294353856]
+
+[node name="Tile" type="TileMapLayer" parent="." unique_id=1430545567]
+tile_set = ExtResource("1_lsqjq")
+
+[node name="SewerWater" type="TileMapLayer" parent="." unique_id=1075721712]
+tile_set = ExtResource("2_d0d4x")
+
+[node name="Prop" type="TileMapLayer" parent="." unique_id=936096615]
+tile_set = ExtResource("3_d4lrt")

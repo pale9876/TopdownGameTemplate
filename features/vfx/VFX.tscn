@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://be4a4fykmyqfu"]
+
+[ext_resource type="SpriteFrames" uid="uid://c0avsrpel3w7g" path="res://data/vfx/vfx.tres" id="1_v7vbi"]
+
+[node name="VFX" type="AnimatedSprite2D" unique_id=1629744766]
+sprite_frames = ExtResource("1_v7vbi")
+animation = &"sparkle_hit"
+frame = 7
+frame_progress = 1.0

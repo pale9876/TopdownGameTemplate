@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bq86xvv2lnwrp"]
+
+[ext_resource type="Script" uid="uid://3rtf5smyg7ch" path="res://features/ingame/map/border.gd" id="1_on7r7"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_on7r7"]
+a = Vector2(3, 3)
+b = Vector2(3, 349)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_rkyi3"]
+a = Vector2(3, 3)
+b = Vector2(637, 3)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_x2s6m"]
+a = Vector2(637, 3)
+b = Vector2(637, 349)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vhxxo"]
+a = Vector2(3, 349)
+b = Vector2(637, 349)
+
+[node name="Border" type="StaticBody2D" unique_id=233962290]
+script = ExtResource("1_on7r7")
+
+[node name="Left" type="CollisionShape2D" parent="." unique_id=266513643]
+shape = SubResource("SegmentShape2D_on7r7")
+disabled = true
+
+[node name="Top" type="CollisionShape2D" parent="." unique_id=1284046606]
+shape = SubResource("SegmentShape2D_rkyi3")
+disabled = true
+
+[node name="Right" type="CollisionShape2D" parent="." unique_id=112951557]
+shape = SubResource("SegmentShape2D_x2s6m")
+disabled = true
+
+[node name="Bottom" type="CollisionShape2D" parent="." unique_id=730305049]
+shape = SubResource("SegmentShape2D_vhxxo")
+disabled = true

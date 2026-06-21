@@ -1,0 +1,339 @@
+[gd_resource type="TileSet" format=3 uid="uid://bitg5jr1oyiuv"]
+
+[ext_resource type="Texture2D" uid="uid://75fx4a03hync" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_1.png" id="1_pcmgk"]
+[ext_resource type="Texture2D" uid="uid://cwgkxetj3x6be" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_2.png" id="2_b7m8n"]
+[ext_resource type="Texture2D" uid="uid://bai81tox1gaq3" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_3.png" id="3_m0w3e"]
+[ext_resource type="Texture2D" uid="uid://bkwp83ad5jrac" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_green_barrel.png" id="4_aqy4s"]
+[ext_resource type="Texture2D" uid="uid://tm4f0j1umsol" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_laders.png" id="5_8ylga"]
+[ext_resource type="Texture2D" uid="uid://dh5a6fbcuna34" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_green_barrel.png" id="6_q7tsq"]
+[ext_resource type="Texture2D" uid="uid://b1bwr8vpeo6fp" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_pips.png" id="7_txxy8"]
+[ext_resource type="Texture2D" uid="uid://c723kd4jm5gyg" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_rags_1.png" id="8_3pm3q"]
+[ext_resource type="Texture2D" uid="uid://r0qrunr3heux" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_rags_2.png" id="9_1ldnl"]
+[ext_resource type="Texture2D" uid="uid://do46tpflfaw57" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_plank.png" id="10_3346e"]
+[ext_resource type="Texture2D" uid="uid://6cddoi7bnhqx" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_rubbish.png" id="11_wh6j8"]
+[ext_resource type="Texture2D" uid="uid://ck8xkv7eohl4y" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_fan_strip13.png" id="12_qa4m0"]
+[ext_resource type="Texture2D" uid="uid://byl86iox5aps4" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_floor_1.png" id="13_okx2h"]
+[ext_resource type="Texture2D" uid="uid://43c6mhep3umu" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_floor_2.png" id="14_7inii"]
+[ext_resource type="Texture2D" uid="uid://ce7v50m3mf08r" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_floor_3.png" id="15_wc8wu"]
+[ext_resource type="Texture2D" uid="uid://cdkflrw8wx4uu" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_floor_4.png" id="16_tfxx0"]
+[ext_resource type="Texture2D" uid="uid://b1rv4r22dsaio" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_floor_5_strip7.png" id="17_yvsat"]
+[ext_resource type="Texture2D" uid="uid://brort0pcvsvi1" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_1.png" id="18_sechy"]
+[ext_resource type="Texture2D" uid="uid://yb5ge7ylm2dw" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_2.png" id="19_ophr1"]
+[ext_resource type="Texture2D" uid="uid://d0oigfxqhjohj" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_3.png" id="20_atcbv"]
+[ext_resource type="Texture2D" uid="uid://b6vul3g1hwle7" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_4.png" id="21_p8ywn"]
+[ext_resource type="Texture2D" uid="uid://cn8fbp4no5xys" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_wall_eyes_strip13.png" id="22_n58bq"]
+[ext_resource type="Texture2D" uid="uid://dggh10oxdbajx" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_hole_strip13.png" id="23_jep3y"]
+[ext_resource type="Texture2D" uid="uid://p4xcr5ej201b" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_wall_pip_strip7.png" id="24_ja2wj"]
+[ext_resource type="Texture2D" uid="uid://c1ocmr5gptf6m" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_water_1_strip13.png" id="25_f36no"]
+[ext_resource type="Texture2D" uid="uid://dwu1oitbjka5x" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_trash_1.png" id="26_deq1n"]
+[ext_resource type="Texture2D" uid="uid://dss35vb5xfb72" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_vent_strip13.png" id="27_cam06"]
+[ext_resource type="Texture2D" uid="uid://da4e13q2js4i3" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/sp_sewer_barrel_strip13.png" id="28_m6b0v"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_agtc3"]
+texture = ExtResource("1_pcmgk")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_inljs"]
+texture = ExtResource("2_b7m8n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_25j4e"]
+texture = ExtResource("3_m0w3e")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u3jlm"]
+texture = ExtResource("4_aqy4s")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jryx7"]
+texture = ExtResource("5_8ylga")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6p0j0"]
+texture = ExtResource("6_q7tsq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7f8x"]
+texture = ExtResource("7_txxy8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bpqa"]
+texture = ExtResource("8_3pm3q")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tmqja"]
+texture = ExtResource("9_1ldnl")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sj560"]
+texture = ExtResource("10_3346e")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t6y2x"]
+texture = ExtResource("11_wh6j8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w0mgj"]
+texture = ExtResource("12_qa4m0")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fk4i2"]
+texture = ExtResource("13_okx2h")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_evbnf"]
+texture = ExtResource("14_7inii")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vpy71"]
+texture = ExtResource("15_wc8wu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kd406"]
+texture = ExtResource("16_tfxx0")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fd7u5"]
+texture = ExtResource("17_yvsat")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrxds"]
+texture = ExtResource("18_sechy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t4bmf"]
+texture = ExtResource("19_ophr1")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fif6d"]
+texture = ExtResource("20_atcbv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xkods"]
+texture = ExtResource("21_p8ywn")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lg5w1"]
+texture = ExtResource("22_n58bq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yowdd"]
+texture = ExtResource("23_jep3y")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sf4w7"]
+texture = ExtResource("24_ja2wj")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wb83h"]
+texture = ExtResource("25_f36no")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4axal"]
+texture = ExtResource("26_deq1n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kbk7h"]
+texture = ExtResource("27_cam06")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0fvfb"]
+texture = ExtResource("28_m6b0v")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+navigation_layer_0/layers = 1
+sources/29 = SubResource("TileSetAtlasSource_agtc3")
+sources/30 = SubResource("TileSetAtlasSource_inljs")
+sources/31 = SubResource("TileSetAtlasSource_25j4e")
+sources/32 = SubResource("TileSetAtlasSource_u3jlm")
+sources/33 = SubResource("TileSetAtlasSource_jryx7")
+sources/34 = SubResource("TileSetAtlasSource_6p0j0")
+sources/35 = SubResource("TileSetAtlasSource_n7f8x")
+sources/36 = SubResource("TileSetAtlasSource_3bpqa")
+sources/37 = SubResource("TileSetAtlasSource_tmqja")
+sources/38 = SubResource("TileSetAtlasSource_sj560")
+sources/39 = SubResource("TileSetAtlasSource_t6y2x")
+sources/40 = SubResource("TileSetAtlasSource_w0mgj")
+sources/41 = SubResource("TileSetAtlasSource_fk4i2")
+sources/42 = SubResource("TileSetAtlasSource_evbnf")
+sources/43 = SubResource("TileSetAtlasSource_vpy71")
+sources/44 = SubResource("TileSetAtlasSource_kd406")
+sources/45 = SubResource("TileSetAtlasSource_fd7u5")
+sources/46 = SubResource("TileSetAtlasSource_wrxds")
+sources/47 = SubResource("TileSetAtlasSource_t4bmf")
+sources/48 = SubResource("TileSetAtlasSource_fif6d")
+sources/49 = SubResource("TileSetAtlasSource_xkods")
+sources/50 = SubResource("TileSetAtlasSource_lg5w1")
+sources/51 = SubResource("TileSetAtlasSource_yowdd")
+sources/52 = SubResource("TileSetAtlasSource_sf4w7")
+sources/53 = SubResource("TileSetAtlasSource_wb83h")
+sources/54 = SubResource("TileSetAtlasSource_4axal")
+sources/55 = SubResource("TileSetAtlasSource_kbk7h")
+sources/56 = SubResource("TileSetAtlasSource_0fvfb")

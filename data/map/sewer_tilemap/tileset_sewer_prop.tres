@@ -1,0 +1,135 @@
+[gd_resource type="TileSet" format=3 uid="uid://brrwafmcm3133"]
+
+[ext_resource type="Texture2D" uid="uid://75fx4a03hync" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_1.png" id="1_wuwnn"]
+[ext_resource type="Texture2D" uid="uid://cwgkxetj3x6be" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_2.png" id="2_hr4hx"]
+[ext_resource type="Texture2D" uid="uid://bai81tox1gaq3" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_bones_3.png" id="3_1kt8n"]
+[ext_resource type="Texture2D" uid="uid://tm4f0j1umsol" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_laders.png" id="4_od4s5"]
+[ext_resource type="Texture2D" uid="uid://b1bwr8vpeo6fp" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_pips.png" id="5_d6xgy"]
+[ext_resource type="Texture2D" uid="uid://c723kd4jm5gyg" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_rags_1.png" id="6_bthfu"]
+[ext_resource type="Texture2D" uid="uid://r0qrunr3heux" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_old_rags_2.png" id="7_233xl"]
+[ext_resource type="Texture2D" uid="uid://do46tpflfaw57" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_plank.png" id="8_pkkau"]
+[ext_resource type="Texture2D" uid="uid://6cddoi7bnhqx" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_rubbish.png" id="9_e6qvs"]
+[ext_resource type="Texture2D" uid="uid://ck8xkv7eohl4y" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_sewer_fan_strip13.png" id="10_qt6vo"]
+[ext_resource type="Texture2D" uid="uid://dggh10oxdbajx" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_Sewer_wall_hole_strip13.png" id="11_r8ajc"]
+[ext_resource type="Texture2D" uid="uid://dwu1oitbjka5x" path="res://assets/sprite/tilemap/Cozy World Animated Sewer Builder Kit/spr_trash_1.png" id="12_l46ij"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a5et7"]
+texture = ExtResource("1_wuwnn")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cl3a3"]
+texture = ExtResource("2_hr4hx")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vhbqp"]
+texture = ExtResource("3_1kt8n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j1g4o"]
+texture = ExtResource("4_od4s5")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, -9.240292, -16, -9.712372, 16, -16, 16)
+0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(7.373274, -16, 16, -16, 16, 16, 7.8999367, 16)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, -8, -16, -8, 16, -16, 16)
+0:1/0/physics_layer_0/polygon_1/points = PackedVector2Array(8, -16, 16, -16, 16, 16, 8, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q4sii"]
+texture = ExtResource("5_d6xgy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3oge"]
+texture = ExtResource("6_bthfu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v7jdw"]
+texture = ExtResource("7_233xl")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uisfs"]
+texture = ExtResource("8_pkkau")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wll1y"]
+texture = ExtResource("9_e6qvs")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rcakm"]
+texture = ExtResource("10_qt6vo")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_roedo"]
+texture = ExtResource("11_r8ajc")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gq0im"]
+texture = ExtResource("12_l46ij")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 6
+sources/16 = SubResource("TileSetAtlasSource_a5et7")
+sources/17 = SubResource("TileSetAtlasSource_cl3a3")
+sources/18 = SubResource("TileSetAtlasSource_vhbqp")
+sources/20 = SubResource("TileSetAtlasSource_j1g4o")
+sources/22 = SubResource("TileSetAtlasSource_q4sii")
+sources/23 = SubResource("TileSetAtlasSource_e3oge")
+sources/24 = SubResource("TileSetAtlasSource_v7jdw")
+sources/25 = SubResource("TileSetAtlasSource_uisfs")
+sources/26 = SubResource("TileSetAtlasSource_wll1y")
+sources/27 = SubResource("TileSetAtlasSource_rcakm")
+sources/28 = SubResource("TileSetAtlasSource_roedo")
+sources/29 = SubResource("TileSetAtlasSource_gq0im")

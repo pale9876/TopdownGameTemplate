@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerInformation" format=3 uid="uid://d2wv2mvcfgvog"]
+
+[ext_resource type="Texture2D" uid="uid://dqr6pbdh0ycib" path="res://assets/portrait/mumei_nanashi.png" id="1_gjeyf"]
+[ext_resource type="Script" uid="uid://r11y6g0g5cvx" path="res://features/player/PlayerInformation.gd" id="2_1vngq"]
+[ext_resource type="SpriteFrames" uid="uid://bsy5o80isejwn" path="res://features/player/mumei_nanashi/mumei_sprite_frames.tres" id="3_kqj0g"]
+
+[resource]
+script = ExtResource("2_1vngq")
+name = &"Nanashi Mumei"
+speed = 200.0
+sprite = ExtResource("3_kqj0g")
+portrait = ExtResource("1_gjeyf")
+metadata/_custom_type_script = "uid://r11y6g0g5cvx"

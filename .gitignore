@@ -1,0 +1,22 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+addons/limboai/bin/~liblimboai.windows.editor.x86_64.dll
+addons/ziva_agent
+.ziva/
+
+# Godot mono / .NET
+.mono/
+*.csproj.DotSettings.user
+obj/
+
+# Builds / exports
+export/
+build/
+builds/
+/addons/kanban_tasks
+kanban_tasks_data.kanban
+/addons/InstanceDock
+InstanceDockSceneData.txt
+/test_scenes
+/addons/SimpleTODO

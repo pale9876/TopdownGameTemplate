@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="HitboxInformation" format=3 uid="uid://diujqo41v585b"]
+
+[ext_resource type="Script" uid="uid://xw07ofvvtrxk" path="res://features/HitboxInformation.gd" id="1_5obvh"]
+
+[resource]
+script = ExtResource("1_5obvh")
+name = &"MinionAttack"
+damage = 20
+metadata/_custom_type_script = "uid://xw07ofvvtrxk"

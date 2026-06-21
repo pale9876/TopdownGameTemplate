@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cf1orjt7ujkck"]
+
+[ext_resource type="Script" uid="uid://cplgj2iixr7f6" path="res://main/MainScene.gd" id="1_enypl"]
+[ext_resource type="PackedScene" uid="uid://dv5bn46oy0fst" path="res://features/ingame/Ingame.tscn" id="2_u8god"]
+[ext_resource type="PackedScene" uid="uid://cvlijmgfo3neh" path="res://features/hud/HUD.tscn" id="3_k6d16"]
+[ext_resource type="PackedScene" uid="uid://c2agrq1i4pbt2" path="res://features/title/Title.tscn" id="4_6k2uc"]
+[ext_resource type="PackedScene" uid="uid://c05su0jq3437j" path="res://features/option_ui/OptionMenu.tscn" id="5_otp8k"]
+[ext_resource type="PackedScene" uid="uid://qnolbh3cfav8" path="res://features/channel/Channel.tscn" id="6_jhc86"]
+
+[node name="MainScene" type="Node" unique_id=905736948]
+script = ExtResource("1_enypl")
+
+[node name="Ingame" parent="." unique_id=906912944 instance=ExtResource("2_u8god")]
+visible = false
+
+[node name="HUD" parent="." unique_id=765911860 instance=ExtResource("3_k6d16")]
+visible = false
+
+[node name="Title" parent="." unique_id=419323065 instance=ExtResource("4_6k2uc")]
+
+[node name="Option" parent="." unique_id=1209387124 instance=ExtResource("5_otp8k")]
+visible = false
+
+[node name="Channel" parent="." unique_id=1466334463 instance=ExtResource("6_jhc86")]
+z_direction = 1
