@@ -13,7 +13,7 @@ func change_scene(link: String) -> void:
 	get_main_scene().queue_free()
 	
 	Global.main_scene.current_map = scene
-	scene
+	
 	add_child(scene)
 
 

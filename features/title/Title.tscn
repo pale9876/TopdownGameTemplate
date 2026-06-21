@@ -29,11 +29,10 @@ theme_override_constants/margin_top = 30
 [node name="CenterContainer" type="CenterContainer" parent="Control/HBoxContainer/MarginContainer" unique_id=1007073550]
 layout_mode = 2
 size_flags_horizontal = 2
-size_flags_vertical = 0
 
 [node name="Title" type="Label" parent="Control/HBoxContainer/MarginContainer/CenterContainer" unique_id=968861072]
 layout_mode = 2
-text = "Holoverse"
+text = "Traitors Twilight"
 
 [node name="CenterContainer2" type="CenterContainer" parent="Control/HBoxContainer" unique_id=505442059]
 layout_mode = 2
