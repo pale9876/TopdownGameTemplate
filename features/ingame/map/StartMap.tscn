@@ -842,6 +842,7 @@ sources/0 = SubResource("TileSetAtlasSource_28jqn")
 size = Vector2(32, 96)
 
 [node name="StartMap" type="Node2D" unique_id=806471253]
+y_sort_enabled = true
 script = ExtResource("1_fexjn")
 margin = 12.0
 

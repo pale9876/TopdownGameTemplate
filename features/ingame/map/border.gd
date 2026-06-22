@@ -14,9 +14,7 @@ enum {
 }
 
 
-@export var is_closed: bool:
-	get:
-		return !left.disabled and !top.disabled and !right.disabled and !bottom.disabled
+@export var is_closed: bool
 
 
 @onready var left: CollisionShape2D = $Left

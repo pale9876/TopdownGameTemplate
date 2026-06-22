@@ -31,7 +31,7 @@ func _init() -> void:
 
 
 func _enter_tree() -> void:
-	player = PLAYER_SCENE.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
+	player = PLAYER_SCENE.instantiate()
 
 
 func get_channel() -> Channel: return channel

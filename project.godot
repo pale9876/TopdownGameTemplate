@@ -47,50 +47,6 @@ project/assembly_name="Holoverse"
 
 enabled=PackedStringArray("res://addons/ThreadedResourceSaveLoadPlugin/plugin.cfg", "res://addons/sprouty_dialogs/plugin.cfg")
 
-[graph_dialogs]
-
-general/input/continue_input_action="dialogs_continue_action"
-general/defaults/default_dialog_box=4048316971199558792
-general/defaults/default_portrait_scene=5003988533333559685
-general/canvas/dialog_box_canvas_layer=2
-general/canvas/portraits_canvas_layer=1
-general/custom/use_custom_event_nodes=false
-general/custom/custom_event_nodes_folder=""
-general/custom/custom_event_interpreter=-1
-text/default_typing_speed=0.05
-text/open_url_on_meta_tag_click=true
-text/display/new_line_as_new_dialog=true
-text/display/split_dialog_by_max_characters=false
-text/display/max_characters=0
-text/skip/allow_skip_text_reveal=true
-text/skip/can_skip_delay=0.1
-text/skip/continue_delay=0.1
-translation/enable_translations=false
-translation/csv_files/use_csv_files=false
-translation/csv_files/csv_translations_folder=""
-translation/csv_files/fallback_to_resource=true
-translation/characters/translate_character_names=false
-translation/characters/use_csv_for_character_names=false
-translation/characters/character_names_csv=-1
-translation/localization/default_locale="en_US"
-translation/localization/locales=["en_US", "ko_KR"]
-variables/variables={
-"Quest Require Items": {
-"color": Color(0.337, 0.62, 1, 1),
-"index": 0,
-"variables": {
-"apple": {
-"index": 0,
-"metadata": {},
-"type": 2,
-"value": 10.0
-}
-}
-}
-}
-internal/play_dialog_path="res://dialogue/sample.tres"
-internal/play_start_id="HELLO"
-
 [input]
 
 left={
@@ -180,3 +136,48 @@ locale/translations_pot_files=PackedStringArray("res://dialogue/sample.dialogue"
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 environment/defaults/default_clear_color=Color(0.025363795, 0.025363805, 0.02536378, 1)
+
+[sprouty_dialogs]
+
+general/input/continue_input_action="dialogs_continue_action"
+general/defaults/default_dialog_box=4048316971199558792
+general/defaults/default_portrait_scene=5003988533333559685
+general/canvas/dialog_box_canvas_layer=2
+general/canvas/portraits_canvas_layer=1
+general/custom/use_custom_event_nodes=false
+general/custom/custom_event_nodes_folder=""
+general/custom/custom_event_interpreter=-1
+text/default_typing_speed=0.05
+text/open_url_on_meta_tag_click=true
+text/display/new_line_as_new_dialog=true
+text/display/split_dialog_by_max_characters=false
+text/display/max_characters=0
+text/skip/allow_skip_text_reveal=true
+text/skip/can_skip_delay=0.1
+text/skip/continue_delay=0.1
+translation/enable_translations=false
+translation/csv_files/use_csv_files=false
+translation/csv_files/csv_translations_folder=""
+translation/csv_files/fallback_to_resource=true
+translation/characters/translate_character_names=false
+translation/characters/use_csv_for_character_names=false
+translation/characters/character_names_csv=-1
+translation/localization/default_locale="en_US"
+translation/localization/locales=["en_US", "ko_KR"]
+internal/variables={
+"Quest Require Items": {
+"color": Color(0.337, 0.62, 1, 1),
+"index": 0,
+"variables": {
+"apple": {
+"index": 0,
+"metadata": {},
+"type": 2,
+"value": 10.0
+}
+}
+}
+}
+internal/play_dialog_path="res://dialogue/sample.tres"
+internal/play_start_id="HELLO"
+general/input/save_sprouty_only=true
